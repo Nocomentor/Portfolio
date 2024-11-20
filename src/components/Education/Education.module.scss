@@ -8,7 +8,7 @@
   .arrowBox {
     width: 400px;
   }
-  .arrow {
+  .arrow, .mobileArrow {
     stroke: globals.$text;
     stroke-width: 3;
     fill: none;
@@ -16,9 +16,34 @@
     filter: drop-shadow(globals.$shadow);
   }
 
-  .arrowEnd {
+  .mobileArrowBox {
+    display: none;
+  }
+
+  .arrowEnd, .mobileArrowEnd {
     fill: globals.$text;
     filter: drop-shadow(globals.$shadow);
+  }
+
+}
+
+@media screen and (max-width: globals.$bp-phone) {
+  .Education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    .arrowBox {
+      display: none;
+    }
+
+    .mobileArrowBox {
+      display: block;
+      height: 230px;
+      margin: 20px 0;
+    }
+
+  
   }
 }
 

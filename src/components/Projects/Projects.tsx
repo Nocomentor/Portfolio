@@ -32,7 +32,7 @@ const projects: IProject[] = [
     title: "Plan zajęć",
     dates: "11.2024",
     description:
-      "Chcąc poznać język Swift stworzyłem swoją pierwszą aplikację na ios, która pomaga mi zapamiętać mój plan zajęć",
+      "Chcąc poznać język Swift stworzyłem swoją pierwszą aplikację na iOS, która pomaga mi zapamiętać mój plan zajęć",
     imgSrc: "media/projects/timetable.PNG",
     techs: ["swift"],
     github: "https://github.com/Nocomentor/TimetableManager",
@@ -45,6 +45,7 @@ const projects: IProject[] = [
     imgSrc: "media/projects/fi.png",
     techs: ["js", "css", "html", "mongodb"],
     github: "https://github.com/PatrykFlama/FajrantInator.pl",
+    liveView: "https://fi.nocos.pl",
   },
   {
     title: "DOMOWY SERWER",
@@ -58,7 +59,7 @@ const projects: IProject[] = [
     title: "... TO PORTFOLIO!",
     dates: "04.2024",
     description:
-      "Tak właściwie, to portfolio, które właśnie oglądasz, jest jedym z zadań, które wykonałem w ramach listy zadań na przedmiot poświęcony ractowi. Czasami tutaj zaglądam, żeby poprawić lekko kod i zaaaktualizować dane.",
+      "Tak właściwie, to portfolio, które właśnie oglądasz, jest jedym z zadań, które wykonałem w ramach listy zadań na przedmiot poświęcony reactowi. Czasami tutaj zaglądam, żeby poprawić lekko kod i zaaaktualizować dane.",
     imgSrc: "media/projects/cv.png",
     techs: ["react", "ts", "scss", "vite"],
   },

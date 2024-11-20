@@ -36,3 +36,10 @@
     }
   }
 }
+
+@media screen and (max-width: globals.$bp-phone) {
+  .SkillsCard {
+    width: 400px;
+    padding: 30px 30px;
+  }
+}

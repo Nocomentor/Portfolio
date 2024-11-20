@@ -46,3 +46,30 @@
     flex-direction: row-reverse;
   }
 }
+
+@media screen and (max-width: globals.$bp-phone) {
+  .SchoolCard {
+    flex-direction: column;
+    gap: 20px;
+
+    &.reverse {
+      flex-direction: column;
+    }
+  
+    .right {
+      width: 300px;
+      gap: 10px;
+  
+      .name{
+          font-size: 20px;
+          text-align: center;
+      }
+  
+      .description {
+          text-align: center;
+      }
+    }
+
+  }
+}
+

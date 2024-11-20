@@ -44,6 +44,21 @@ function Education() {
         ></polyline>
       </svg>
 
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="-0.3 -0.3 70 180.6"
+        className={classes.mobileArrowBox}
+      >
+        <path
+          d="M 36 15 L 36 105 C 36 105 36 123 18 123 C 0 123 0 105 0 105 C 0 99.0006 0 87 18 87 C 36 87 72 87 54 123 C 36 141 36 141 36 159 L 36 178"
+          className={classes.mobileArrow}
+        />
+        <polyline
+          className={classes.mobileArrowEnd}
+          points="27,18 36,0 45,18 36,13"
+        ></polyline>
+      </svg>
+
       <SchoolCard
         key={xiv.name}
         name={xiv.name}

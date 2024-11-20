@@ -32,6 +32,11 @@
         transform: skew(20deg);
       }
 
+      .mobileContent {
+        transform: skew(20deg);
+        display: none;
+      }
+
       &:hover {
         @include highlighted-item;
       }
@@ -41,6 +46,25 @@
   .active {
     .item {
       @include highlighted-item;
+    }
+  }
+}
+
+@media screen and (max-width: globals.$bp-phone) {
+  .Navbar {
+  
+    .List {
+  
+      .item {
+  
+        .content {
+          display: none;
+        }
+
+        .mobileContent {
+          display: block;
+        }
+      }
     }
   }
 }

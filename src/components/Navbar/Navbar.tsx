@@ -3,30 +3,36 @@ import { Link } from "@tanstack/react-router";
 
 interface INavbarItems {
   title: string;
+  mobileTitle: string;
   href: string;
 }
 
 const navbarItems: INavbarItems[] = [
   {
     title: "O mnie",
+    mobileTitle: "👤",
     href: "/",
   },
   {
     title: "Projekty",
+    mobileTitle: "💾",
     href: "/projects",
   },
   {
     title: "Umiejętności",
+    mobileTitle: "🛠️",
     href: "/skills",
   },
   {
+    mobileTitle: "🏫",
     title: "Edukacja",
     href: "/education",
   },
-  {
-    title: "Żeglowanie",
-    href: "/sailing",
-  },
+  // {
+  //   mobileTitle: "⛵️",
+  //   title: "Żeglowanie",
+  //   href: "/sailing",
+  // },
 ];
 
 const activeProps = {
@@ -42,6 +48,7 @@ function Navbar() {
             <Link to={item.href} activeProps={activeProps}>
               <div className={classes.item}>
               <div className={classes.content}>{item.title}</div>
+              <div className={classes.mobileContent}>{item.mobileTitle}</div>
               </div>
             </Link>
           </li>

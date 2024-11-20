@@ -14,7 +14,7 @@
     height: 300px;
     border-radius: 20px;
     box-shadow: globals.$shadow;
-
+    
     display: flex;
 
     .left {
@@ -112,6 +112,30 @@
         gap: 20px;
         .link {
             text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: globals.$bp-phone) {
+  .Projects {
+
+    .project {
+      width: 380px;
+      height: unset;
+      border-radius: 20px;
+  
+      flex-direction: column;
+  
+      .left {
+        width: 100%;
+        height: 260px;
+        border-bottom-left-radius: 0px;
+        gap: 10px;
+  
+        .projectImg {
+          max-height: 130px;
         }
       }
     }

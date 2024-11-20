@@ -65,3 +65,21 @@
     }
   }
 }
+
+@media screen and (max-width: globals.$bp-phone) {
+  .About {
+  
+    .titleBarContainer {
+  
+      .titleBar {
+        max-width: 400px;
+      }
+    }
+  
+    .socials {
+      margin: 20px 20px 100px 20px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
