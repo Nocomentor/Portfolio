@@ -1,0 +1,48 @@
+@use "@/globals";
+
+.SchoolCard {
+  height: 200px;
+  display: flex;
+  align-items: center;
+//   flex-direction: row-reverse;
+  gap: 40px;
+  max-width: 600px;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: globals.$blockBg;
+    flex-shrink: 0;
+
+    img {
+      width: 200px;
+      filter: drop-shadow(globals.$shadow);
+      flex-shrink: 0;
+    }
+  }
+
+  .right {
+    background-color: globals.$blockBg;
+    color: globals.$text;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: globals.$shadow;
+
+    .name{
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    .description {
+        font-style: italic;
+    }
+  }
+
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+}

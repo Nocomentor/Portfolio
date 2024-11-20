@@ -1,0 +1,67 @@
+@use "@/globals";
+
+.About {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+
+  .titleBarContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      margin-bottom: -5px;
+      height: 300px;
+      z-index: 1;
+    }
+
+    .titleBar {
+      width: 600px;
+      margin-top: 0;
+      background-color: globals.$blockBg;
+      color: globals.$text;
+      padding: 20px;
+      border-radius: 20px;
+      z-index: 10;
+      box-shadow: globals.$shadow;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+
+      .name {
+        font-weight: 700;
+        font-size: 32px;
+      }
+
+      .description {
+        font-style: italic;
+      }
+    }
+  }
+
+  .socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    a .social {
+      text-decoration: underline;
+    }
+
+    .social {
+      background-color: globals.$blockBg;
+      color: globals.$text;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: globals.$shadow;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 0 0 1;
+    }
+  }
+}

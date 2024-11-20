@@ -1,0 +1,24 @@
+@use '@/globals';
+
+.Education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .arrowBox {
+    width: 400px;
+  }
+  .arrow {
+    stroke: globals.$text;
+    stroke-width: 3;
+    fill: none;
+    stroke-dasharray: 5;
+    filter: drop-shadow(globals.$shadow);
+  }
+
+  .arrowEnd {
+    fill: globals.$text;
+    filter: drop-shadow(globals.$shadow);
+  }
+}
+

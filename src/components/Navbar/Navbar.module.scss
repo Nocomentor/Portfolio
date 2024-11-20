@@ -1,0 +1,46 @@
+@use "@/globals";
+
+@mixin highlighted-item {
+  background-color: globals.$text;
+  color: globals.$blockBg;
+}
+
+.Navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .List {
+    list-style: none;
+
+    background-color: globals.$blockBg;
+    color: globals.$text;
+
+    display: flex;
+    overflow: hidden;
+    border-radius: 15px;
+
+    box-shadow: globals.$shadow;
+
+    .item {
+      padding: 10px 28px;
+      transform: skew(-20deg);
+      margin: 0 -5px;
+
+      .content {
+        transform: skew(20deg);
+      }
+
+      &:hover {
+        @include highlighted-item;
+      }
+    }
+  }
+
+  .active {
+    .item {
+      @include highlighted-item;
+    }
+  }
+}

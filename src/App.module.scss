@@ -1,0 +1,12 @@
+@use '@/globals';
+
+.App {
+    background: linear-gradient(270deg, #8ec5fc, #e0c3fc);
+    background-size: 400% 400%;
+
+    -webkit-animation: bodyAnimate 10s ease infinite;
+    -moz-animation: bodyAnimate 10s ease infinite;
+    animation: bodyAnimate 10s ease infinite;
+
+    min-height: 100vh;
+}
