@@ -1,4 +1,3 @@
-import React from "react";
 
 import classes from "./Skills.module.scss";
 import SkillsCard, { SkillsCardProps } from "../cards/SkillsCard/SkillsCard";
