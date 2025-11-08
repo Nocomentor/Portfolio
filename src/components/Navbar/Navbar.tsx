@@ -28,11 +28,11 @@ const navbarItems: INavbarItems[] = [
     title: "Edukacja",
     href: "/education",
   },
-  // {
-  //   mobileTitle: "⛵️",
-  //   title: "Żeglowanie",
-  //   href: "/sailing",
-  // },
+  {
+    mobileTitle: "⛵️",
+    title: "Żeglowanie",
+    href: "/sailing",
+  },
 ];
 
 const activeProps = {
